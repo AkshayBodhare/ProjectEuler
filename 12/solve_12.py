@@ -43,7 +43,6 @@ def main():
     """prints the first triangle number with more than 500 divisors."""
     primes = list(prime_sieve(10**5))
     for number in triangle_numbers(10**5):
-        x = divisors(number, primes)
         if divisors(number, primes) > 500:
             print("{} is the number".format(number))
             break
